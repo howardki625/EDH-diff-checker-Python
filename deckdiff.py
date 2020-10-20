@@ -27,9 +27,11 @@ url2 = sys.argv[2]
 deck1 = GetFromDeckStats(url1)
 deck2 = GetFromDeckStats(url2)
 
-res = GetDiff(deck1, deck2)
+diff = []
+for card in deck1 + deck2:
+    if card not in deck1 or card not in deck2:
+        diff.append(card)
 
-#print(deck1, '\n', deck2)
-print(res)
+print(diff)
 #https://deckstats.net/decks/62058/1299769-double-titan
 #https://deckstats.net/decks/62058/808205-raza-frog
