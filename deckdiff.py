@@ -15,11 +15,16 @@ def GetFromDeckStats(url):
     return decklist.split('\n')
 
 def GetDiff(deck1, deck2):
-    diff = []
-    for card in deck1 + deck2:
-        if card not in deck1 or card not in deck2:
-            diff.append(card)
-    return diff
+    diff1 = []
+    diff2 = []
+    # for each deck, get the cards that are not in the other
+    for card in deck1:
+        if card not in deck2:
+            diff1.append(card)
+    for card in deck2:
+        if card not in deck1:
+            diff2.append(card)
+    return diff1, diff2
 
 url1 = sys.argv[1]
 url2 = sys.argv[2]
@@ -27,11 +32,10 @@ url2 = sys.argv[2]
 deck1 = GetFromDeckStats(url1)
 deck2 = GetFromDeckStats(url2)
 
-diff = []
-for card in deck1 + deck2:
-    if card not in deck1 or card not in deck2:
-        diff.append(card)
+res1, res2 = GetDiff(deck1, deck2)
 
-print(diff)
+#print(deck1, '\n', deck2)
+print(res1)
+print(res2)
 #https://deckstats.net/decks/62058/1299769-double-titan
 #https://deckstats.net/decks/62058/808205-raza-frog
