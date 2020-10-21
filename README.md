@@ -11,4 +11,7 @@ To run tests, do the following
 
 ```bash
 python -m pip install pytest
-python -m pytest test\utilities_test.py 
+
+python -m pytest
+  or
+pytest
