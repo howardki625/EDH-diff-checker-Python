@@ -15,3 +15,4 @@ def test_get_from_deck_stats(requests_mock):
     requests_mock.get(f'{api}', json = {'list': '1 something'})
     res = get_from_deck_stats(url)
     assert res == ['1 something']
+    
