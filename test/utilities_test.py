@@ -7,6 +7,7 @@ def test_deck_commonalities():
     assert diff1 == [7]
     assert diff2 == [8]
 
+
 def test_list_extender():
     list1 = [1, 3, 5, 7]
     list2 = [1, 3, 5]
