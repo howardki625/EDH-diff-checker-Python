@@ -19,6 +19,3 @@ extend_lists_for_printing(diff1, diff2)
 frmt = ("{:<35}"+"{:<35}")
 for x, y in zip(diff1, diff2):
     print(frmt.format(x, y))
-
-#https://deckstats.net/decks/62058/1299769-double-titan
-#https://deckstats.net/decks/62058/808205-raza-frog
