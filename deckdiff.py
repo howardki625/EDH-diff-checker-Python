@@ -1,6 +1,4 @@
 import sys
-import re
-import requests
 from deck_sources.deck_stats import get_from_deck_stats
 from utilities import *
 
