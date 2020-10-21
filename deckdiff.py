@@ -1,6 +1,6 @@
 import sys
 from deck_sources.deck_stats import get_from_deck_stats
-from utilities import *
+from utilities import get_deck_differences, extend_lists_for_printing
 
 # grabs url from console
 url1 = sys.argv[1]

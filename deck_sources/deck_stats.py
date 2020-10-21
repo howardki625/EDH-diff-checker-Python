@@ -1,6 +1,7 @@
 import re
 import requests
 
+
 def extract_ids(url):
     temp = re.findall(r'\d+', url)
     res = list(map(str, temp))

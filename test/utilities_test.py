@@ -1,4 +1,5 @@
-from utilities import *
+from utilities import get_deck_differences, extend_lists_for_printing
+
 
 def test_deck_commonalities():
     deck1 = [1, 3, 5, 7]
