@@ -19,3 +19,4 @@ extend_lists_for_printing(diff1, diff2)
 frmt = ("{:<35}"+"{:<35}")
 for x, y in zip(diff1, diff2):
     print(frmt.format(x, y))
+
