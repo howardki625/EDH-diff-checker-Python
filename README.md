@@ -12,10 +12,15 @@ python deckdiff.py https://deckstats.net/decks/62058/1299769-double-titan https:
 To run tests, do the following
 
 ```bash
-python -m pip install pytest
+pip install pytest
 
-python -m pytest
-  or
 pytest
 ```
 
+test coverage
+
+```bash
+pip install pytest-cov
+
+pytest --cov=test/ --cov-report=html
+```
