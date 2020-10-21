@@ -1,4 +1,6 @@
 # EDH-diff-checker-Python
+![Python application](https://github.com/howardki625/EDH-diff-checker-Python/workflows/Python%20application/badge.svg)
+
 same as the other, but in Python
 
 currently only supports DeckStats because it has an API for getting deck data
@@ -17,4 +19,3 @@ python -m pytest
 pytest
 ```
 
-![Python application](https://github.com/howardki625/EDH-diff-checker-Python/workflows/Python%20application/badge.svg)
