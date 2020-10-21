@@ -13,4 +13,3 @@ def get_from_deck_stats(url):
     res = requests.get(api)
     decklist = res.json()['list']
     return decklist.split('\n')
-

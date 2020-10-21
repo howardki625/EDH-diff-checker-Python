@@ -4,6 +4,7 @@ def get_deck_differences(deck1, deck2):
     diff2 = [i for i in deck2 if i not in deck1]
     return diff1, diff2
 
+
 def extend_lists_for_printing(list1, list2):
     # match the list lengths for print formatting
     delta = len(list1) - len(list2)
